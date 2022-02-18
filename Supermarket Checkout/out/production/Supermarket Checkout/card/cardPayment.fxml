@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="319.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="card.CardPayment">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="571.0">
+         <children>
+            <GridPane layoutX="-7.0" layoutY="-7.0" prefHeight="319.0" prefWidth="571.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="267.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="293.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="cardConfirm" mnemonicParsing="false" onAction="#cardConfirm" prefHeight="46.0" prefWidth="88.0" text="Confirm" translateX="50.0" GridPane.rowIndex="1" />
+                  <Button fx:id="cardButton9" mnemonicParsing="false" onAction="#card9" prefHeight="36.0" prefWidth="38.0" text="9" translateX="110.0" translateY="-40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton8" mnemonicParsing="false" onAction="#card8" prefHeight="36.0" prefWidth="38.0" text="8" translateX="65.0" translateY="-40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton7" mnemonicParsing="false" onAction="#card7" prefHeight="36.0" prefWidth="38.0" text="7" translateX="20.0" translateY="-40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton6" mnemonicParsing="false" onAction="#card6" prefHeight="36.0" prefWidth="38.0" text="6" translateX="110.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton5" mnemonicParsing="false" onAction="#card5" prefHeight="36.0" prefWidth="38.0" text="5" translateX="65.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton4" mnemonicParsing="false" onAction="#card4" prefHeight="36.0" prefWidth="38.0" text="4" translateX="20.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton3" mnemonicParsing="false" onAction="#card3" prefHeight="36.0" prefWidth="38.0" text="3" translateX="110.0" translateY="40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton2" mnemonicParsing="false" onAction="#card2" prefHeight="36.0" prefWidth="38.0" text="2" translateX="65.0" translateY="40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton1" mnemonicParsing="false" onAction="#card1" prefHeight="36.0" prefWidth="38.0" text="1" translateX="20.0" translateY="40.0" GridPane.columnIndex="1" />
+                  <Button fx:id="cardButton0" mnemonicParsing="false" onAction="#card0" prefHeight="36.0" prefWidth="38.0" text="0" translateX="65.0" translateY="80.0" GridPane.columnIndex="1" />
+                  <Button fx:id="enter" mnemonicParsing="false" onAction="#cardEnter" prefHeight="42.0" prefWidth="52.0" text="Enter" translateX="190.0" translateY="-25.0" GridPane.columnIndex="1" />
+                  <Button fx:id="clear" mnemonicParsing="false" onAction="#cardClear" prefHeight="42.0" prefWidth="52.0" text="Clear" translateX="190.0" translateY="25.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="cardBar" translateY="-75.0" GridPane.columnIndex="1" />
+                  <Label fx:id="cashDue" prefHeight="32.0" prefWidth="275.0" text="Cash Due: £" translateY="-40.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="cardCancel" mnemonicParsing="false" onAction="#cardCancel" prefHeight="46.0" prefWidth="88.0" text="Cancel" translateX="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

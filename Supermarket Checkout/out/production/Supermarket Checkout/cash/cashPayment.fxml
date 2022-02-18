@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cash.CashPayment">
+   <children>
+      <GridPane prefHeight="319.0" prefWidth="571.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="267.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="293.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="confirm" mnemonicParsing="false" onAction="#confirm" prefHeight="46.0" prefWidth="88.0" text="Confirm" translateX="50.0" GridPane.rowIndex="1" />
+            <Button fx:id="cashButton9" mnemonicParsing="false" onAction="#cash9" prefHeight="36.0" prefWidth="38.0" text="9" translateX="110.0" translateY="-40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton8" mnemonicParsing="false" onAction="#cash8" prefHeight="36.0" prefWidth="38.0" text="8" translateX="65.0" translateY="-40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton7" mnemonicParsing="false" onAction="#cash7" prefHeight="36.0" prefWidth="38.0" text="7" translateX="20.0" translateY="-40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton6" mnemonicParsing="false" onAction="#cash6" prefHeight="36.0" prefWidth="38.0" text="6" translateX="110.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton5" mnemonicParsing="false" onAction="#cash5" prefHeight="36.0" prefWidth="38.0" text="5" translateX="65.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton4" mnemonicParsing="false" onAction="#cash4" prefHeight="36.0" prefWidth="38.0" text="4" translateX="20.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton3" mnemonicParsing="false" onAction="#cash3" prefHeight="36.0" prefWidth="38.0" text="3" translateX="110.0" translateY="40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton2" mnemonicParsing="false" onAction="#cash2" prefHeight="36.0" prefWidth="38.0" text="2" translateX="65.0" translateY="40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton1" mnemonicParsing="false" onAction="#cash1" prefHeight="36.0" prefWidth="38.0" text="1" translateX="20.0" translateY="40.0" GridPane.columnIndex="1" />
+            <Button fx:id="cashButton0" mnemonicParsing="false" onAction="#cash0" prefHeight="36.0" prefWidth="38.0" text="0" translateX="65.0" translateY="80.0" GridPane.columnIndex="1" />
+            <Button fx:id="enter" mnemonicParsing="false" onAction="#cashEnter" prefHeight="42.0" prefWidth="52.0" text="Enter" translateX="190.0" translateY="-25.0" GridPane.columnIndex="1" />
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#cashClear" prefHeight="42.0" prefWidth="52.0" text="Clear" translateX="190.0" translateY="25.0" GridPane.columnIndex="1" />
+            <TextField fx:id="cashBar" translateY="-75.0" GridPane.columnIndex="1" />
+            <Label fx:id="custCash" prefHeight="32.0" prefWidth="277.0" text="Cash Entered: £">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="cashDue" prefHeight="32.0" prefWidth="275.0" text="Cash Due: £" translateY="-40.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="88.0" text="Cancel" translateX="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="cashButtonPoint" mnemonicParsing="false" onAction="#cashPoint" prefHeight="36.0" prefWidth="38.0" text="." translateX="110.0" translateY="80.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
